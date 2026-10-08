@@ -18,6 +18,15 @@ This repository does not include datasets. Please download them from the officia
 - **MotionSense** dataset is available at https://www.kaggle.com/datasets/malekzadeh/motionsense-dataset
 - **WISDM** dataset is available at https://archive.ics.uci.edu/dataset/507/wisdm+smartphone+and+smartwatch+activity+and+biometrics+dataset
 
+## Codebase Overview
+The `model/` directory contains the three UCI-HAR backbone implementations. Each file includes one model architecture and the training and reliability-evaluation code used in the experiments.
+
+- `model_cnn.py`: CNN backbone
+- `model_bilstm.py`: BiLSTM backbone
+- `model_transformer.py`: Transformer backbone
+
+Dataset loading and preprocessing are not included.
+
 ## Citing this Repository
 If you use this code in your research, please cite:
 ```bibtex
