@@ -1,0 +1,5 @@
+## Models and Reliability Evaluation
+
+This folder contains the CNN, BiLSTM, and Transformer model implementations used in the UCI-HAR experiments, along with the reliability evaluation methods.
+
+The code covers model architectures, training, and evaluation under clean and sensor-corruption conditions. Dataset loading and preprocessing are not included.
