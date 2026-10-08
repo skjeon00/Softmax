@@ -1,10 +1,14 @@
 # Beyond Softmax Confidence: Do Alternative Reliability Measures Justify Their Cost in Wearable Human Activity Recognition?
 <img width="1376" height="677" alt="Softmax_arch" src="https://github.com/user-attachments/assets/a4cc7e49-dfbf-465e-9ea6-2cdb9f11471e" />
+This repository implements the methodology proposed in the paper “When Is Softmax Confidence Sufficient for Trustworthy Wearable Human Activity Recognition?”
 
 ## Paper Overview
 **Abstract:** Deep learning-based human activity recognition (HAR) typically relies on softmax outputs for activity classification, with the resulting probabilities also providing inexpensive measures of prediction confidence. Beyond these conventional measures, various reliability estimation approaches have been investigated using temporal evidence, prediction consistency, and test-time augmentation. However, whether such additional information provides meaningful improvements over simple softmax-based confidence measures remains unclear, particularly when accounting for computational cost. <br>
+<br>
 This study systematically compares output-based, temporal, augmentation-based, and composite reliability measures across four wearable HAR datasets, three backbone architectures, and 16 controlled sensor-corruption conditions. Their effectiveness is evaluated through error detection, selective prediction, and computational overhead. <br>
+<br>
 Under sensor corruption, predictive entropy achieves the best mean reliability performance across the three primary metrics on UCI-HAR and PAMAP2, while softmax-derived measures also perform best on WISDM. On MotionSense, the full composite improves mean error-detection AUROC from 0.7564 to 0.7648 and achieves better selective prediction at 50--70% coverage. However, predictive entropy retains better mean AUPRC and AURC. Furthermore, the full composite increases inference latency by approximately 308--345% in the UCI-HAR Raspberry Pi 4 evaluation. <br>
+<br>
 These findings demonstrate that incorporating additional reliability information does not consistently improve the identification of incorrect HAR predictions. The benefits of more complex reliability estimation depend on the dataset and evaluation criterion, highlighting the importance of assessing whether improvements justify their additional computational cost. <br>
 
 ## Dataset
