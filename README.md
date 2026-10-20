@@ -11,15 +11,6 @@ Under sensor corruption, predictive entropy achieves the best mean reliability p
 <br>
 These findings demonstrate that incorporating additional reliability information does not consistently improve the identification of incorrect HAR predictions. The benefits of more complex reliability estimation depend on the dataset and evaluation criterion, highlighting the importance of assessing whether improvements justify their additional computational cost. <br>
 
-## Codebase Overview
-The `model/` directory contains the three UCI-HAR backbone implementations. Each file includes one model architecture and the training and reliability-evaluation code used in the experiments.
-
-- `model_cnn.py`: CNN backbone
-- `model_bilstm.py`: BiLSTM backbone
-- `model_transformer.py`: Transformer backbone
-
-Dataset loading and preprocessing are not included.
-
 ## Dataset
 This repository does not include datasets. Please download them from the official sources below and configure the dataset path accordingly.
 - **UCI-HAR** dataset is available at https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones
